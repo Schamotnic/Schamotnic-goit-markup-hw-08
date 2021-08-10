@@ -1,0 +1,31 @@
+// секция чем мы занимаемся
+
+.what-we-do__item {
+  margin-left: 30px;
+}
+
+.what-we-do {
+  display: flex;
+  margin: 0px 0px;
+  padding: 0px;
+}
+
+.what-we-do__list {
+  position: relative;
+}
+
+.what-we-do__label {
+  font-weight: $font-weight-bold;
+  display: flex;
+  margin: 0px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: $background-opacity;
+  color: $white-color-text;
+}

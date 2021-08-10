@@ -1,0 +1,16 @@
+/* стили кнопки заказать услугу */
+
+.web-tem-photo__btn {
+  padding: 10px 32px;
+  margin: auto;
+  border: 0px;
+  border-radius: 4px;
+  color: $white-color-text;
+  background-color: $accent;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.87;
+  display: block;
+  width: 200px;
+  height: 50px;
+}

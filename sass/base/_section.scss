@@ -1,0 +1,116 @@
+// секция наша команд
+
+.section-what-we-do {
+  padding-bottom: 94px;
+  @media screen and(max-width:1200px) {
+    display: none;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  background-color: #f5f4fa;
+}
+
+.section-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 200px 0px;
+  max-width: $max-width-site;
+  background-color: $secondary-background-color;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img-ouer-team.jpg");
+}
+@media screen and (min-device-pixel-ratio: 1) and (min-widht: 320px),
+  (min-resolution: 96dpi),
+  (min-resolution: 1dppx),
+  (-webkit-min-device-pixel-ratio: 1) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-mob-1x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-widht: 320px),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-mob-2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 1) and (min-widht: 768px),
+  (min-resolution: 96dpi),
+  (min-resolution: 1dppx),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-tab-1x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-widht: 768px),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-tab-2x.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 1) and (min-widht: 1200px),
+  (min-resolution: 96dpi),
+  (min-resolution: 1dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-desk-1x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-widht: 1200px),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-desk-2x.jpg");
+  }
+}

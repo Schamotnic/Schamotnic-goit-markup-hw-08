@@ -1,0 +1,133 @@
+// Бордер для навигации
+.page {
+  border-bottom: 1px solid #ececec;
+}
+// Навигация на две странци
+.nav-list {
+  margin: 0px;
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+.nav-box {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list__link--active {
+  position: relative;
+  display: flex;
+  padding: 32px 0px;
+}
+
+.nav-list__link--active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.nav-list__link {
+  justify-content: center;
+  display: flex;
+  color: $secondary-text-color;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 32px 0px;
+}
+.nav-list__items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list__link--active,
+.nav-list__link:focus,
+.nav-list__link:hover {
+  text-decoration: none;
+  color: $accent;
+}
+
+// стили контактов в хедере двух страниц
+.link-telephon__link-contact,
+.link-post__link-contact {
+  align-items: center;
+  display: flex;
+  // padding: 32px 0px;
+  font-style: normal;
+  color: $main-colors-text;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    padding: 32px 0px;
+    align-items: center;
+    // margin-right: 30px;
+  }
+}
+
+.link-post__link-contact:focus,
+.link-post__link-contact:hover {
+  color: $accent;
+}
+
+.link-telephon__link-contact:hover,
+.link-telephon__link-contact:focus {
+  color: $accent;
+}
+
+.link-post {
+  margin: 0px 0px 0px auto;
+  list-style: none;
+  // display: flex;
+  padding: 0px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-post {
+    margin: 0px 0px 0px auto;
+    list-style: none;
+    display: flex;
+  }
+}
+.link-post__svg {
+  fill: #757575;
+  margin: 0px;
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.link-post__link-imail {
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}

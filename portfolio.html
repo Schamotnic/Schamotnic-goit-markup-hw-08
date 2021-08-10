@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page">
+      <nav>
+        <!-- <div class="page"> -->
+        <div class="nav-box container">
+          <a href="WebStudio" class="logo"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
+          <button
+            class="menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-toggle__icon menu-toggle__icon--menu"
+              width="24"
+              height="16"
+            >
+              <use href="./images/sprait-2.svg#icon-icon-menu"></use>
+            </svg>
+          </button>
+          <!-- Основная навигация  -->
+          <ul class="nav-list">
+            <li class="nav-list__items">
+              <a href="./index.html" class="nav-list__link">Студия</a>
+            </li>
+            <li class="nav-list__items">
+              <a href="./portfolio.html" class="nav-list__link--active"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list__items">
+              <a href="" class="nav-list__link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="link-post">
+            <li class="link-post__link-imail">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link-post__link-contact"
+                ><svg class="link-post__svg" widht="16" height="12">
+                  <use href="./images/sprait.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="link-post__link-telephon">
+              <a href="tel:+380961111111" class="link-telephon__link-contact"
+                ><svg class="link-post__svg" widht="10" height="16">
+                  <use href="./images/sprait.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <!-- Навигация по сранице портфолио -->
+        <div class="container">
+          <ul class="list-button">
+            <li class="list-button__items">
+              <button type="button" class="list-button__btn--all">Все</button>
+            </li>
+            <li class="website-btn list-button__items">
+              <button
+                type="button"
+                class="list-button__btn list-button__btn--website"
+              >
+                Веб-сайты
+              </button>
+            </li>
+            <li class="list-button__items">
+              <button
+                type="button"
+                class="list-button__btn list-button__btn--application"
+              >
+                Приложения
+              </button>
+            </li>
+            <li class="design-bnt list-button__items">
+              <button
+                type="button"
+                class="list-button__btn list-button__btn--design"
+              >
+                Дизайн
+              </button>
+            </li>
+            <li class="marketing-btn list-button__items">
+              <button
+                type="button"
+                class="list-button__btn--marketing list-button__btn"
+              >
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!--<h1> Наши предложени <h1> -->
+
+          <ul class="list-card">
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-1-1x.jpg 1x,
+                        ./images/desk-1-1x.jpg 1x 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/tab-1-1x.jpg 1x,
+                      ./images/tab-1-1x.jpg 1x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-1-1x.jpg 1x,
+                        ./images/mob-1-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/Веб-сайт.jpg"
+                      alt="Ноутбук с изображением сотрудников"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+                  <p class="list-card__overlay-text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="list-card__box list-card__box--card">
+                  <h2 class="list-card__title">Технокряк</h2>
+                  <p class="list-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-2-1x.jpg 1x,
+                        ./images/desk-2-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-2-1x.jpg 1x,
+                        ./images/tab-2-1x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-2-1x.jpg 1x,
+                        ./images/mob-2-1x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/дизайн.jpg"
+                      alt="Баскетболист отбирает мячь у соперника"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="list-card__overlay-text overlay-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias veritatis, soluta quis doloribus accusamus culpa
+                    minima delectus assumenda. Porro, non?
+                  </p>
+                </div>
+                <div class="list-card__box">
+                  <h2 class="list-card__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="list-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-3-1x.jpg 1x,
+                        ./images/desk-3-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-3-1x.jpg 1x,
+                        ./images/tab-3-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-3-1x.jpg 1x,
+                        ./images/mob-3-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/Приложение.jpg"
+                      alt="Логотип ресторана морской еды"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="list-card__overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
+                    Repellendus, laboriosam et.
+                  </p>
+                </div>
+                <div class="list-card__box">
+                  <h2 class="list-card__title">Ресторан Seafood</h2>
+                  <p class="list-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-4-1x.jpg 1x,
+                        ./images/desk-4-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-4-1x.jpg 1x,
+                        ./images/tab-4-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-4-1x.jpg 1x,
+                        ./images/mob-4-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/Маркетинг.jpg"
+                      alt="Изображение наушников"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="list-card__overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
+                    Repellendus, laboriosam et.
+                  </p>
+                </div>
+                <div class="list-card__box">
+                  <h2 class="list-card__title">Проект Prime</h2>
+                  <p class="list-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-5-1x.jpg 1x,
+                        ./images/desk-5-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-5-1x.jpg 1x,
+                        ./images/tab-5-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobail-5-1x.jpg 1x,
+                        ./images/mobail-5-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/приложение2.jpg"
+                      alt="Изобрание двух коробочек"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="list-card__overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
+                    Repellendus, laboriosam et.
+                  </p>
+                </div>
+                <div class="list-card__box">
+                  <h2 class="list-card__title">Проект Boxes</h2>
+                  <p class="list-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-6-1x.jpg 1x,
+                        ./images/desk-6-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-6-1x.jpg 1x,
+                        ./images/tab-6-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobail-6-1x.jpg 1x,
+                        ./images/mobail-6-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/веб-сайт2.jpg"
+                      alt="Монитор компътера с изображением сайтов"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="list-card__overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
+                    Repellendus, laboriosam et.
+                  </p>
+                </div>
+                <div class="list-card__box">
+                  <h2 class="list-card__title">Inspiration has no Borders</h2>
+                  <p class="list-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-7-1x.jpg 1x,
+                        ./images/desk-7-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-7-1x.jpg 1x,
+                        ./images/tab-7-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobail-7-1x.jpg 1x,
+                        ./images/mobail-7-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/дизайн2.jpg"
+                      alt="Изображение глянцевого журнала с статьями"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="list-card__overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
+                    Repellendus, laboriosam et.
+                  </p>
+                </div>
+                <div class="list-card__box">
+                  <h2 class="list-card__title">Издание Limited Edition</h2>
+                  <p class="list-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-8-1x.jpg 1x,
+                        ./images/desk-8-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-8-1x.jpg 1x,
+                        ./images/tab-8-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobail-8-1x.jpg 1x,
+                        ./images/mobail-8-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/маркетинг2.jpg"
+                      alt="Изображение лейбы с надписъю"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="list-card__overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
+                    Repellendus, laboriosam et.
+                  </p>
+                </div>
+                <div class="list-card__box">
+                  <h2 class="list-card__title">Проект LAB</h2>
+                  <p class="list-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-card__item">
+              <a class="list-card__link" href="#">
+                <div class="list-card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-9-1x.jpg 1x,
+                        ./images/desk-9-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-9-1x.jpg 1x,
+                        ./images/tab-9-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobail-9-1x.jpg 1x,
+                        ./images/mobail-9-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./images/приложение3.jpg"
+                      alt="Изображение ноутбука на коором работают"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="list-card__overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
+                    Repellendus, laboriosam et.
+                  </p>
+                </div>
+                <div class="list-card__box">
+                  <h2 class="list-card__title">Growing Business</h2>
+                  <p class="list-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-toggle js-close-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="menu-toggle__icon menu-toggle__icon--menu"
+          width="24"
+          height="16"
+        >
+          <use href="./images/sprait-2.svg#icon-icon-close"></use>
+        </svg>
+      </button>
+      <ul class="list-mob-nav">
+        <li class="list-mob-nav__item">
+          <a class="list-mob-nav__link" href="./index.html">Студия</a>
+        </li>
+        <li class="list-mob-nav__item">
+          <a class="list-mob-nav__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="list-mob-nav__item">
+          <a class="list-mob-nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="mob-container">
+        <ul class="list-mob-contact">
+          <li class="list-mob-contact__item">
+            <a class="list-mob-contact__link-tel" href="tel:+380991111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="list-mob-contact__item">
+            <a
+              class="list-mob-contact__link-mail"
+              href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link">Instagram</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer-address">
+      <div class="address container">
+        <div class="thumba-footer">
+          <div class="box-web-foter">
+            <a href="WebStudio" class="logo-footer"
+              ><span class="logo-accent">Web</span>Studio</a
+            >
+            <address>
+              <ul class="box-footer">
+                <li>
+                  <a href="" class="box-footer__address">
+                    г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="box-footer__mail">
+                  <a
+                    href="mailto:info@example.com"
+                    class="box-footer__link-mail"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380991111111" class="box-footer__link-telephon"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="us-icons">
+            <p class="join">Присоединяйтесь</p>
+            <ul class="list-join-us">
+              <li class="list-join-us__item">
+                <a class="list-join-us__link" href="#">
+                  <svg class="list-join-us__svg" width="20" height="20">
+                    <use href="./images/sprait.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-join-us__item">
+                <a class="list-join-us__link" href="#">
+                  <svg class="list-join-us__svg" width="20" height="20">
+                    <use href="./images/sprait.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-join-us__item">
+                <a class="list-join-us__link" href="#">
+                  <svg class="list-join-us__svg" width="20" height="20">
+                    <use href="./images/sprait.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-join-us__item">
+                <a class="list-join-us__link" href="#">
+                  <svg class="list-join-us__svg" width="20" height="20">
+                    <use href="./images/sprait.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Сстилизация секции подписки в футере с кнопкой -->
+        <div class="box-for-send">
+          <form class="form-to-footer">
+            <label class="send-lable" for="send">Подпишитесь на рассылку</label>
+            <div class="div-to-form">
+              <input
+                class="send-email"
+                type="email"
+                name="email"
+                id="send"
+                placeholder="E-mail"
+              />
+              <button class="send-btn active" type="submit">
+                Подписаться
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/sprait.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

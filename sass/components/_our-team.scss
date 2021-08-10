@@ -1,0 +1,105 @@
+// секция наша команда
+// ul
+.our-team {
+  margin: 0px;
+  // display: flex;
+  padding: 0px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+// li
+.our-team__person {
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+.subject-h3 {
+  text-transform: none;
+  margin: 0px 0px 10px 0px;
+  color: $secondary-text-color;
+  font-weight: $font-weight-medium;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.our-team__text {
+  padding: 0px;
+  margin: 0px 0px 16px 0px;
+  color: $main-colors-text;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+// .our-team__person:not(:last-child) {
+//   margin-right: 30px;
+// }
+//  стилизация социальных иконок в  Нашей команде
+
+.our-team__svg {
+  fill: currentColor;
+}
+
+.our-team__social-icon {
+  border-radius: 50%;
+  display: flex;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: $accent;
+  }
+}
+
+.our-team__list {
+  margin: auto;
+  width: 210px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-team__thumba-team {
+  padding: 30px;
+  background-color: $white-color-text;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.subject-h2 {
+  font-weight: $font-weight-bold;
+  font-size: 28px;
+  line-height: 1.16;
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+  color: $secondary-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin: 0px 0px 50px 0px;
+  }
+}
