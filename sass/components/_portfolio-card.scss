@@ -16,7 +16,7 @@
   letter-spacing: 0.02em;
   list-style-type: none;
   @media screen and(min-width: 1200px) {
-    margin-top: -30px;
+    margin-bottom: -30px;
     margin-left: -30px;
   }
   @media screen and(min-width: 768px) {
@@ -30,23 +30,23 @@
 
 .list-card__item {
   width: 100%;
-  margin-left: 30px;
+  // margin-left: 30px;
   margin-bottom: 30px;
-  
 }
 
 @media screen and (min-width: 768px) {
   .list-card__item {
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .list-card__item {
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     flex-basis: calc(100% / 3 - 30px);
+    margin-top: 0px;
   }
 }
 /* стили для портфолио в */

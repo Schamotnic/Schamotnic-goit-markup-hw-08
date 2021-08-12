@@ -150,6 +150,16 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-mob-1x.jpg");
   }
 }
+@media screen and (min-width: 320px) {
+  .section-hero {
+    padding: 118px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    padding: 200px 0px;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2) and (min-widht: 320px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-mob-2x.jpg");
@@ -229,7 +239,6 @@ body {
 
 .our-customers__list {
   width: 210px;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 320px) {
   .our-customers__list {
@@ -472,8 +481,7 @@ body {
 .lable-checbox {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.714;
   margin-bottom: 30px;
 }
@@ -680,6 +688,7 @@ body {
 .list-text__text-subjec {
   margin: 10px 0px 0px 0px;
   line-height: 1.71;
+  font-weight: 400;
 }
 
 h3 {
@@ -734,7 +743,7 @@ h3 {
 }
 @media screen and (min-width: 1200px) {
   .list-card {
-    margin-top: -30px;
+    margin-bottom: -30px;
     margin-left: -30px;
   }
 }
@@ -749,22 +758,22 @@ h3 {
 
 .list-card__item {
   width: 100%;
-  margin-left: 30px;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .list-card__item {
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .list-card__item {
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     flex-basis: calc(100% / 3 - 30px);
+    margin-top: 0px;
   }
 }
 /* стили для портфолио в */
@@ -1040,7 +1049,6 @@ h3 {
 }
 
 .us-icons {
-  margin-left: auto;
   margin-bottom: 60px;
 }
 
@@ -1052,12 +1060,14 @@ h3 {
 @media screen and (min-width: 768px) {
   .thumba-footer {
     display: flex;
+    justify-content: space-around;
   }
 }
 
-@media screen and (min-whith: 1200px) {
+@media screen and (min-width: 1200px) {
   .thumba-footer {
     display: flex;
+    text-align: left;
   }
 }
 .list-button {
@@ -1075,12 +1085,18 @@ h3 {
   .list-button {
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
 .list-button__items:not(:last-child) {
   margin-right: 8px;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .list-button__items:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .list-button__btn {
